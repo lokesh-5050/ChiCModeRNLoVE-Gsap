@@ -1,0 +1,355 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+
+}
+#main{
+    width: 100%;
+    height: 100%;
+}
+
+#home{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(33, 36, 33);
+}
+#dot-circle{
+    position: absolute;
+    width: 80vw;
+    height: 80vw;
+    border-radius: 50%;
+    border: 1px dotted rgba(133, 132, 132, 0.288);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#s-circle{
+    width: 4vw;
+    height: 4vw;
+    border: 1px solid red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Pairs sans saint";
+    color: rgb(248, 169, 105);
+    position: absolute;
+    top: 48%;
+    right:7.5%;
+}
+#s-circle h4{
+    font-size: 0.9vw;
+    font-family: Hello Paris Sans ExtraLight;
+}
+#hcircle{
+    width: 25vw;
+    height: 25vw;
+    border-radius: 50%;
+    /* background-color: orangered; */
+    background-image: url(https://images.unsplash.com/photo-1516565349308-c76fe36a115c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80);
+    
+    background-size: cover;
+    background-position: center;
+}
+#container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+   
+
+    
+}
+#texts{
+    /* background-color: rgba(255, 255, 0, 0.164); */
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#texts h1{
+    font-size: 14vw;
+    font-family: "Hello Paris Sans ExtraLight";
+    font-weight: 100;
+    line-height: 8vw;
+    color: rgb(206, 98, 59);
+}
+#hnav{
+    width: 100%;
+    height: 12vh;
+    /* background-color: orange;        */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 4vw 7vw;
+}
+#nlef{
+    /* width: 12%; */
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    
+   
+}
+#nlef a{
+    color: rgb(241, 176, 102); 
+
+    text-decoration: underline 1px solid orange;
+    margin-left: 1vw;
+    font-family: "vegawanty";
+    
+}
+#ncentre{
+    width: 3%;
+    height: 20%;
+    /* background-color: red; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#ncentre h1{
+    font-family: "vegawanty";
+    color: rgb(236, 64, 33); 
+
+    font-weight: 100;
+}
+#nright{
+    /* width: 20%; */
+    height: 100%;
+    /* background-color: rgb(0, 0, 0); */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#nright a{
+    color: rgb(241, 176, 102); 
+    font-family: "vegawanty";
+    margin-left: 4vw;
+    text-decoration: underline 1px solid rgb(233, 193, 119);
+
+}
+#d-nav{
+    width: 60%;
+    height: 15vh;
+    position: absolute;
+    /* bottom: 2%; */
+    top: 88%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+.star{
+    width: 30%;
+    height: 80%;
+    text-align: center;
+}
+.star  h2{
+    font-size: 3.5vw;
+    line-height: 2vw;
+    font-family: "vegwanty";
+    color: rgb(247, 211, 144);
+
+}
+.star h4{
+    color: rgb(236, 199, 129);
+    text-decoration: underline 1px solid rgb(241, 184, 110);
+    font-family: "bigilla";
+}
+#page2{
+    width: 100%;
+    height: 110vh;
+    background-color: rgb(0, 0, 0);
+
+    position: relative;
+}
+#images{
+    width: 100%;
+    /* height: 70vh; */
+    /* background-color: blue; */
+    position: absolute;
+    top: 8vw;
+    display: flex;
+    gap: 2vw;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden  ;
+    
+   
+}
+#runTxt{
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    z-index: 9999;
+    opacity: 0.6;
+}
+#runTxt h2{
+    font-size: 4vw;
+    font-family: bigilla;
+    color: #dadada;
+}
+#images::-webkit-scrollbar{
+    display: none;
+}
+.pics{
+    width: 30%;
+    height: 70vh;
+    /* background-color: rgb(255, 17, 17); */
+    flex-shrink: 0;
+    position: relative;
+    left: 30%;
+}
+.pics img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    overscroll-behavior: smooth;
+    
+}
+#page3{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    overflow: hidden;
+    
+
+}
+#heads{
+    background-color: rgb(255, 255, 255);
+    min-width: 40%;
+    position: absolute;
+    top: 7vw;
+    left: 0%;
+    padding: 0 2vw;
+}
+
+
+
+
+
+#heads h1{
+    font-size: 4vw;
+    font-family: product sans;
+}
+.stripes{
+    width: 4%;
+    height: 100%;
+    background-color: rgb(255, 248, 248);
+    position: relative;
+    flex-shrink: 0;
+    
+}
+.stripes h4{
+    transform: rotate(-90deg);
+    transform-origin: 44%;
+    position: absolute;
+    top: 90%;
+    font-family: product sans;
+}
+.stripes:nth-child(2){
+    background-color: rgb(248, 120, 46);
+    /* z-index: 99; */
+  
+}
+
+.stripes:nth-child(3){
+
+    /* z-index: 100; */
+    background-color: rgb(111, 214, 245);
+  
+
+}
+
+.stripes:nth-child(4){
+    background-color: rgb(252, 234, 79);
+
+}
+
+.stripes:nth-child(5){
+    background-color: rgb(209, 29, 53);
+  
+
+}
+
+.strcnt{
+    width: 90%;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+}
+
+#page4{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+.texts{
+    background-color: palevioletred;
+    width: 100%;
+    position:relative;
+    top: 10vw;
+    padding-left: 6vw;
+    
+}
+
+.texts img{
+    width: 15%;
+    object-fit: cover;
+    position: absolute;
+    top: -3vw;
+    left: 8vw;
+    opacity: 0;
+    z-index: 97886746;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+
+
+.texts h1{
+    color: #fff;
+    font-size: 4vw;
+    font-family: "bigilla";
+}
+.texts:nth-child(2){
+    background-color: red;
+    margin-top: 3vw;
+}
+
+.texts:nth-child(3){
+    background-color: rgb(31, 37, 33);
+    margin-top: 3vw;
+}
+
+.texts:nth-child(4){
+    background-color: rgb(224, 75, 75);
+    margin-top: 3vw;
+}
